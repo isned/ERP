@@ -18,6 +18,8 @@
             "tenant": "default",
             "usePublicURLFromServer": true,
             "port": 8060,
+            "schemaUpdateMode": "ForceSync",
+            
             
             
         }

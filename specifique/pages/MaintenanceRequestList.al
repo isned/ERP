@@ -18,10 +18,32 @@ page 60003 "Maintenance Request List"
                     ApplicationArea = All;
                     Caption = 'Maintenance ID';
                 }
-                field(Date; Rec.Date)
+                field(DateStart; Rec.DateStart)
                 {
                     ApplicationArea = All;
-                    Caption = 'Maintenance Date';
+                    Caption = 'Maintenance Date Start';
+                }
+                field(DateEnd; Rec.DateEnd)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Maintenance Date End ';
+                }
+                field(Duration; Rec.Duration)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Duration';
+                }
+
+
+                field(Description; Rec.Description)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Maintenance Description';
+                }
+                field(StatusMaintenance; Rec.StatusMaintenance)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Maintenance Status';
                 }
                 field(TechnicianId; Rec.TechnicianId)
                 {
@@ -39,10 +61,30 @@ page 60003 "Maintenance Request List"
                     Caption = 'Technician LastName';
                 }
 
-                field(Status; Rec.Status)
+                field(Status; Rec.StatusTechnician)
                 {
                     ApplicationArea = All;
                     Caption = 'Status';
+                }
+                field(No; Rec.CustomerId)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Numero Customer';
+                }
+                field(CustomerName; Rec.CustomerName)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Name Customer';
+                }
+                field(ItemNo; Rec.ItemId)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Numero Item';
+                }
+                field(ItemName; Rec.CustomerName)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Name Item';
                 }
             }
         }

@@ -2,7 +2,7 @@
   "id": "2b545aa4-50d5-4b36-b40c-8ddd6657123b",
   "name": "ALProject2",
   "publisher": "Default Publisher",
-  "version": "1.0.0.0",
+  "version": "1.0.0.3",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -23,6 +23,7 @@
   "showMyCode": true,
   "runtime": "6.0",
   "features": [
-    "NoImplicitWith"
+    
+    "TranslationFile"
   ]
 }

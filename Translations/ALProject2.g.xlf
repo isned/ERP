@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="ALProject2">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 426751018 - Field 3716052221 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NumberTechnician</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table cueProject - Field NumberTechnician - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 426751018 - Field 2333076789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PrimaryKey</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table cueProject - Field PrimaryKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Request</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 2619142763 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field CustomerId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 1881986821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field CustomerName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 664594125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Date End</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field DateEnd - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 4148370728 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Date Start</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field DateStart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 1637095154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Duration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field Duration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 3973653471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technician First Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field FirstName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 1073920108 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field IdMaintenance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 2835048180 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field ItemId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 3015522478 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field ItemName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 4082585823 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technician Last Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field LastName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 4131028403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field StatusMaintenance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 1477770536 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technician Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field StatusTechnician - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 168379592 - Field 862466887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technician ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Maintenance Request - Field TechnicianId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3629229696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technicien</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Technicien - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3629229696 - Method 3152277940 - NamedType 2951775720" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unable to delete the technician because its status is "Available"</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Technicien - Method OnDelete - NamedType text001</note>
+        </trans-unit>
+        <trans-unit id="Table 3629229696 - Field 3973653471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>First Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Technicien - Field FirstName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3629229696 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technician ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Technicien - Field Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3629229696 - Field 4082585823 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Technicien - Field LastName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3629229696 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Technicien - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 89396145 - Control 3716052221 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Technician</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page cardCue - Control NumberTechnician - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 89396145 - Action 1692444235 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page cardCue - Action ActionName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Request Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 4286801358 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General Information</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control GeneralInformation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 664594125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Date End</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control DateEnd - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 4148370728 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Date Start</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control DateStart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 2455710154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details Customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control detailsCustomer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 2619142763 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control CustomerId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 1881986821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control CustomerName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 3722812552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control detailsItems - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 2835048180 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control ItemId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 3015522478 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control ItemName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 4264604894 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details Technician </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control detailsTechnician - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technician ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 1637095154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Duration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control Duration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 1073920108 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control IdMaintenance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Control 4131028403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Control StatusMaintenance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2423066204 - Action 447321532 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Submit Maintenance Request</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request Card - Action SubmitMaintenanceRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Requests List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 1881986821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name Customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control CustomerName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 664594125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Date End </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control DateEnd - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 4148370728 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Date Start</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control DateStart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 1637095154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Duration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control Duration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 3973653471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technician FirstName</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control FirstName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 1073920108 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control IdMaintenance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 3015522478 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control ItemName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 332802016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numero Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control ItemNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 4082585823 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technician LastName</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control LastName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 949215307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numero Customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 4131028403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control StatusMaintenance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Control 862466887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technician ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Control TechnicianId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2561403962 - Action 1951303167 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Maintenance Request</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Maintenance Request List - Action NewRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2134858097 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rôle de Center</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RoleCenter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2134858097 - Control 1669475062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Card Cue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RoleCenter - Control cardCueProject - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1985573908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technicien Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Technicien Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1985573908 - Control 526532270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Technicien Card - Control details - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1985573908 - Control 4105281732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Technicien Card - Control GroupName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 624803666 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Technicien Liste</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Technicien list - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3306064755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Disponibility Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Disponibility Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3306064755 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Disponibility Status - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3306064755 - EnumValue 3920084379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Available </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Disponibility Status - EnumValue Available - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3306064755 - EnumValue 1544785351 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Busy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Disponibility Status - EnumValue Busy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3917283395 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Maintenance Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3917283395 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Maintenance Status - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3917283395 - EnumValue 2972410191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>completed </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Maintenance Status - EnumValue completed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3917283395 - EnumValue 1332899473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>pending </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Maintenance Status - EnumValue pending - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3917283395 - EnumValue 1831964303 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> progress  </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Maintenance Status - EnumValue progress - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

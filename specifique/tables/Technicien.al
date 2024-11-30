@@ -52,8 +52,15 @@ table 60000 "Technicien"
     end;
 
     trigger OnDelete()
+    var
+        text001: Label 'Unable to delete the technician because its status is "Available"';
     begin
-        // Custom logic when deleting a technician
+
+
+
+        Rec.TestField(Status, Rec.Status::Busy);
+
+
     end;
 
     trigger OnRename()

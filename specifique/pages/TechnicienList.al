@@ -23,6 +23,7 @@ page 60000 "Technicien list"
                 field(Status; Rec.Status)
                 {
                     ApplicationArea = all;
+                    StyleExpr = statusStyle;
                    
                 }
               
@@ -32,6 +33,20 @@ page 60000 "Technicien list"
 
         }
     }
+ var
+
+        statusStyle: Text;
+
+    trigger OnAfterGetRecord()
+
+    begin
+        clear(statusStyle);
+        if Rec.Status = Rec.Status::Available then
+            statusStyle := 'favorable'
+        else
+            if Rec.Status = Rec.Status::Busy then
+                statusStyle := 'unfavorable'
+    end;
 
    
     }
