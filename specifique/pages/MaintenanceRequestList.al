@@ -35,7 +35,7 @@ page 60003 "Maintenance Request List"
                 }
 
 
-                field(Description; Rec.Description)
+                field(Description; Rec.DescriptionMaintenance)
                 {
                     ApplicationArea = All;
                     Caption = 'Maintenance Description';

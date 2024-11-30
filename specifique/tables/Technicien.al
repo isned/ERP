@@ -58,7 +58,7 @@ table 60000 "Technicien"
 
 
 
-        Rec.TestField(Status, Rec.Status::Busy);
+        Rec.TestField(Status, Rec.Status::Available);
 
 
     end;

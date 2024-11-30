@@ -3,19 +3,12 @@ enum 60001 "Maintenance Status"
     Extensible = true;
     Caption = 'Maintenance Status';
 
-    value(0; " ")
+
+    value(0; Inprogress)
     {
-        Caption = ' ';
+        Caption = ' Inprogress  ';
     }
-    value(1; progress)
-    {
-        Caption = ' progress  ';
-    }
-    value(2; pending)
-    {
-        Caption = 'pending ';
-    }
-    value(3; completed)
+    value(1; completed)
     {
         Caption = 'completed ';
     }

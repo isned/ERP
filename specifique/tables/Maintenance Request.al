@@ -15,7 +15,7 @@ table 60002 "Maintenance Request"
             DataClassification = ToBeClassified;
             Caption = 'Maintenance Date Start';
         }
-        field(4; Description; Text[100])
+        field(4; DescriptionMaintenance; Text[100])
         {
             DataClassification = ToBeClassified;
             Caption = 'Maintenance Description';

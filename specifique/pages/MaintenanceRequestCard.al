@@ -34,20 +34,41 @@ page 60004 "Maintenance Request Card"
                     trigger OnValidate()
                     var
                         DurationInDays: Integer;
+                        Technicien: Record Technicien;
                     begin
                         // Vérifier si la DateEnd est inférieure à la DateStart
                         if Rec.DateEnd < Rec.DateStart then
-                            ERROR('The End Date cannot be earlier than the Start Date.'); // Alerte
+                            ERROR('The End Date cannot be earlier than the Start Date.');
 
                         // Calculer la durée en jours
                         DurationInDays := Rec.DateEnd - Rec.DateStart;
 
                         // Remplir automatiquement le champ Duration
-                        Rec.Duration := DurationInDays; // Le champ est directement rempli avec le nombre de jours
+                        Rec.Duration := DurationInDays;
 
                         // Afficher une alerte si nécessaire
-                        // Utilisation de ERROR pour afficher une alerte
                         MESSAGE('The duration has been automatically calculated as %1 day(s).', DurationInDays);
+
+                        // Changer le statut du technicien en fonction de la DateEnd
+                        if Rec.DateEnd < TODAY then begin
+                            if Technicien.Get(Rec.TechnicianId) then begin
+                                Technicien.Status := Technicien.Status::Available;
+                                Technicien.Modify();
+                            end;
+                        end
+                        else begin
+                            if Technicien.Get(Rec.TechnicianId) then begin
+                                Technicien.Status := Technicien.Status::Busy;
+                                Technicien.Modify();
+                            end;
+                        end;
+
+                        // Mise à jour du statut de la maintenance en fonction de la DateEnd
+                        if Rec.DateEnd < TODAY then
+                            Rec.StatusMaintenance := Rec.StatusMaintenance::Completed
+                        else
+                            Rec.StatusMaintenance := Rec.StatusMaintenance::Inprogress;
+
                     end;
                 }
 
@@ -57,7 +78,7 @@ page 60004 "Maintenance Request Card"
                     Caption = 'Duration';
                 }
 
-                field(Description; Rec.Description)
+                field(Description; Rec.DescriptionMaintenance)
                 {
                     ApplicationArea = All;
                     Caption = 'Maintenance Description';
@@ -71,7 +92,7 @@ page 60004 "Maintenance Request Card"
 
                 group(detailsTechnician)
                 {
-                    Caption = 'Details Technician ';
+                    Caption = 'Details Technician';
 
                     field(Id; Rec.TechnicianId)
                     {
@@ -82,10 +103,8 @@ page 60004 "Maintenance Request Card"
                         var
                             Technicien: Record Technicien;
                         begin
-                            // Filtrer uniquement les techniciens avec le statut "Available"
-                            Technicien.SetRange(Status, Technicien.Status::Available); // Utilisation de l'énumération
+                            Technicien.SetRange(Status, Technicien.Status::Available);
 
-                            // Afficher la liste filtrée des techniciens
                             if PAGE.RunModal(PAGE::"Technicien list", Technicien) = ACTION::LookupOK then begin
                                 Rec.TechnicianId := Technicien.Id;
                                 Rec.FirstName := Technicien.FirstName;
@@ -100,7 +119,6 @@ page 60004 "Maintenance Request Card"
                             Technicien: Record Technicien;
                         begin
                             if Technicien.Get(Rec.TechnicianId) then begin
-                                // Vérifier si le technicien est disponible
                                 if Technicien.Status <> Technicien.Status::Available then
                                     ERROR('The selected technician is not available.');
 
@@ -116,7 +134,7 @@ page 60004 "Maintenance Request Card"
                     field(FirstName; Rec.FirstName)
                     {
                         ApplicationArea = All;
-                        Editable = false; // Les champs sont récupérés automatiquement
+                        Editable = false;
                     }
 
                     field(LastName; Rec.LastName)
@@ -145,7 +163,6 @@ page 60004 "Maintenance Request Card"
                         var
                             CustomerRec: Record Customer;
                         begin
-                            // Affiche la liste des clients pour sélection
                             if PAGE.RunModal(PAGE::"Customer List", CustomerRec) = ACTION::LookupOK then begin
                                 Rec.CustomerId := CustomerRec."No.";
                                 Rec.CustomerName := CustomerRec.Name;
@@ -169,7 +186,7 @@ page 60004 "Maintenance Request Card"
                     {
                         ApplicationArea = All;
                         Caption = 'Customer Name';
-                        Editable = false; // Champ non modifiable, mis à jour automatiquement
+                        Editable = false;
                     }
                 }
 
@@ -186,7 +203,6 @@ page 60004 "Maintenance Request Card"
                         var
                             ItemRec: Record Item;
                         begin
-                            // Affiche la liste des clients pour sélection
                             if PAGE.RunModal(PAGE::"Item List", ItemRec) = ACTION::LookupOK then begin
                                 Rec.ItemId := ItemRec."No.";
                                 Rec.ItemName := ItemRec.Description;
@@ -229,8 +245,9 @@ page 60004 "Maintenance Request Card"
 
                 trigger OnAction()
                 begin
-                    // Logic to submit the maintenance request
-                    // Implement the submission logic, e.g., status update or create entry
+                    // Logique de soumission de la demande de maintenance
+                    // Mettez à jour le statut si nécessaire ou créez l'entrée dans la table
+                    Rec.StatusMaintenance := Rec.StatusMaintenance::Inprogress; // Définir le statut sur "Inprogress" au départ
                 end;
             }
         }
