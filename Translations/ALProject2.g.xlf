@@ -323,8 +323,13 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Technicien list - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3810102871 - Field 3368899305 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3367425660">
+          <source>Custom Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension BC ServiceContracts - Field CustomStatus - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3810102871 - Field 2649667893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3367425660">
-          <source>Department Description</source>
+          <source>Maintenance Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension BC ServiceContracts - Field DescriptionMaintenance - Property Caption</note>
         </trans-unit>
@@ -332,6 +337,26 @@
           <source>Maintenance Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension BC ServiceContracts - Field IdMaintenance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4201455065 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Custom Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Custom Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4201455065 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Custom Status - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4201455065 - EnumValue 3844911025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Canceled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Custom Status - EnumValue Canceled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4201455065 - EnumValue 1798264334 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Signed </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Custom Status - EnumValue Signed - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3306064755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Disponibility Status</source>

@@ -133,6 +133,9 @@ table 60002 "Maintenance Request"
         {
             Clustered = true;
         }
+
+
+
     }
 
     trigger OnInsert()
@@ -154,4 +157,16 @@ table 60002 "Maintenance Request"
     begin
         // Custom logic when renaming a maintenance request
     end;
+
+
+    procedure GetMaintenanceByCustomer(CustomerNo: Code[20]): Boolean
+    begin
+        Reset();
+        SetRange("CustomerId", CustomerNo); // Filtrer par CustomerId
+        if FindFirst then
+            exit(true); // Retourne vrai si une maintenance est trouvée
+        exit(false);
+    end;
+
+
 }

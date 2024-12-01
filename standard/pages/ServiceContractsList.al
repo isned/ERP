@@ -1,30 +1,24 @@
-pageextension 69322 "BC ServiceContractsList" extends "Service Contract List"
+pageextension 69321 "BC ServiceContractsList" extends "Service Contracts"
 {
     layout
     {
-        // Add changes to page layout here
-        addafter("Description")
+        addafter("Description") // Ajout après le champ "Description"
         {
             field(IdMaintenance; Rec.IdMaintenance)
             {
-                ApplicationArea = all;
-
+                ApplicationArea = All; // Rendre le champ visible dans toutes les zones d'application
             }
             field(MaintenanceDescription; Rec.DescriptionMaintenance)
             {
-                ApplicationArea = all;
+                ApplicationArea = All; // Rendre le champ visible dans toutes les zones d'application
             }
+            field(CustomStatus; Rec.CustomStatus)
+            {
+                ApplicationArea = All;
 
-
-
+            }
         }
     }
 
-    actions
-    {
-        // Add changes to page actions here
-    }
 
-    var
-        myInt: Integer;
 }
