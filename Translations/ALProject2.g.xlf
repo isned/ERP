@@ -358,6 +358,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Technicien list - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 512895254 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ReportProject</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Facture - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 512895254 - Control 1881986821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Facture - Control CustomerName - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3810102871 - Field 3368899305 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3367425660">
           <source>Custom Status</source>
           <note from="Developer" annotates="general" priority="2"></note>
