@@ -92,6 +92,18 @@ table 60002 "Maintenance Request"
             DataClassification = ToBeClassified;
             Editable = false;
         }
+        field(14; "UnitPrice"; Integer)
+        {
+            Caption = 'Item Price';
+            DataClassification = ToBeClassified;
+            Editable = false;
+        }
+        field(15; "TotalMaintenance"; Integer)
+        {
+            Caption = 'Total Maintenance';
+            DataClassification = ToBeClassified;
+            Editable = false;
+        }
 
 
 

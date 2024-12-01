@@ -46,8 +46,11 @@ page 60004 "Maintenance Request Card"
                         // Remplir automatiquement le champ Duration
                         Rec.Duration := DurationInDays;
 
+                        // Calculer le TotalMaintenance dès que la durée change
+                        Rec.TotalMaintenance := 60 * Rec.Duration + Rec.UnitPrice;
+
                         // Afficher une alerte si nécessaire
-                        MESSAGE('The duration has been automatically calculated as %1 day(s).', DurationInDays);
+                        MESSAGE('The duration has been automatically calculated as %1 day(s). Total Maintenance: %2.', DurationInDays, Rec.TotalMaintenance);
 
                         // Changer le statut du technicien en fonction de la DateEnd
                         if Rec.DateEnd < TODAY then begin
@@ -68,7 +71,6 @@ page 60004 "Maintenance Request Card"
                             Rec.StatusMaintenance := Rec.StatusMaintenance::Completed
                         else
                             Rec.StatusMaintenance := Rec.StatusMaintenance::Inprogress;
-
                     end;
                 }
 
@@ -206,6 +208,9 @@ page 60004 "Maintenance Request Card"
                             if PAGE.RunModal(PAGE::"Item List", ItemRec) = ACTION::LookupOK then begin
                                 Rec.ItemId := ItemRec."No.";
                                 Rec.ItemName := ItemRec.Description;
+                                Rec.UnitPrice := ItemRec."Unit Price";
+                                // Recalculer le TotalMaintenance quand le prix unitaire change
+                                Rec.TotalMaintenance := 60 * Rec.Duration + Rec.UnitPrice;
                             end;
                             exit(true);
                         end;
@@ -226,10 +231,26 @@ page 60004 "Maintenance Request Card"
                     {
                         ApplicationArea = All;
                         Caption = 'Item Name';
+                        Editable = false; // Rendre le champ non modifiable
+                    }
+                    field(UnitPrice; Rec.UnitPrice)
+                    {
+                        ApplicationArea = All;
+                        Caption = 'Unit Price';
                         Editable = false;
                     }
                 }
 
+                group(Maintenance)
+                {
+                    Caption = 'Total Maintenance';
+
+                    field(TotalMaintenance; Rec.TotalMaintenance)
+                    {
+                        ApplicationArea = All;
+                        Caption = 'Maintenance Total';
+                    }
+                }
             }
         }
     }

@@ -17,6 +17,11 @@ pageextension 69321 "BC ServiceContractsList" extends "Service Contracts"
                 ApplicationArea = All;
 
             }
+            field(TotalMaintenance; Rec.TotalMaintenance)
+            {
+                ApplicationArea = All;
+
+            }
         }
     }
 

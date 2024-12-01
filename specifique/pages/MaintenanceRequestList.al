@@ -81,11 +81,22 @@ page 60003 "Maintenance Request List"
                     ApplicationArea = All;
                     Caption = 'Numero Item';
                 }
+                field(ItemPrice; Rec.UnitPrice)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Price Item';
+                }
                 field(ItemName; Rec.CustomerName)
                 {
                     ApplicationArea = All;
                     Caption = 'Name Item';
                 }
+                field(TotalMaintenance; Rec.TotalMaintenance)
+                {
+                    ApplicationArea = All;
+                    Caption = 'TotalMaintenance';
+                }
+
             }
         }
     }

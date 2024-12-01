@@ -18,6 +18,11 @@ tableextension 65965 "BC ServiceContracts" extends "Service Contract Header"
             Caption = 'Custom Status';
             DataClassification = ToBeClassified;
         }
+        field(65969; TotalMaintenance; Integer)
+        {
+            Caption = 'Total Maintenance';
+            DataClassification = ToBeClassified;
+        }
 
     }
 }
