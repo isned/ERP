@@ -1,15 +1,67 @@
-table 60002 "Maintenance Request"
+table 60002 MaintenanceRequest
 {
     DataClassification = ToBeClassified;
     Caption = 'Maintenance Request';
 
     fields
     {
-        field(1; IdMaintenance; Code[20])
+
+        /* field(107; "No. Series"; Code[20])
+         {
+             Caption = 'No. Series';
+             Editable = false;
+             TableRelation = "No. Series";
+         }*/
+
+
+
+
+
+
+
+        /*
+                field(33; "Invoice Disc. Code"; Code[20])
+                {
+                    Caption = 'Invoice Disc. Code';
+                    TableRelation = "MaintenanceRequest";
+
+                    ValidateTableRelation = false;
+                }*/
+
+
+
+
+
+
+
+
+        /*   field(1; IdMaintenance; Code[20])
+           {
+               //Editable = false;
+               Caption = 'Maintenance No.';
+               DataClassification = ToBeClassified;
+               trigger OnValidate()
+               var
+                   SalesSetup: Record "Sales & Receivables Setup";
+                   NoSeriesMgt: Codeunit NoSeriesManagement;
+               begin
+                   if "IdMaintenance" <> xRec."IdMaintenance" then begin
+                       SalesSetup.Get();
+                       NoSeriesMgt.TestManual(SalesSetup."Maintenance Nos.");
+                       "No. Series" := '';
+                   end;
+                   if "Invoice Disc. Code" = '' then
+                       "Invoice Disc. Code" := "IdMaintenance";
+               end;
+           }*/
+        field(1; IdMaintenance; Integer)
         {
             DataClassification = ToBeClassified;
             Caption = 'Maintenance ID';
+            AutoIncrement = true;
         }
+
+
         field(2; DateStart; Date)
         {
             DataClassification = ToBeClassified;
@@ -107,13 +159,13 @@ table 60002 "Maintenance Request"
 
 
 
-        field(60003; TechnicianId; Code[20])
+        field(60003; TechnicianId; Integer)
         {
             DataClassification = ToBeClassified;
             Caption = 'Technician ID';
-            TableRelation = Technicien.Id;
-        }
+            TableRelation = Technicien.Id; // Relation avec la table Technicien
 
+        }
 
         field(60004; FirstName; Text[100])
         {
@@ -133,9 +185,10 @@ table 60002 "Maintenance Request"
         {
             Caption = 'Technician Status';
             FieldClass = FlowField;
-            CalcFormula = lookup(Technicien.Status where(Id = field(TechnicianId)));
+            CalcFormula = lookup(Technicien.Status where(
+                Id = field(TechnicianId)
+            ));
         }
-
 
     }
 
@@ -149,11 +202,24 @@ table 60002 "Maintenance Request"
 
 
     }
+    /* trigger OnInsert()
+     var
+         SalesSetup: Record "Sales & Receivables Setup"; // Get the sales setup
+         NoSeriesMgt: Codeunit NoSeriesManagement; // Codeunit for handling number series
+     begin
+         if "IdMaintenance" = '' then begin // Corrected syntax for the field
+             SalesSetup.Get(); // Get the sales setup record
+             SalesSetup.TestField("Maintenance Nos."); // Ensure the Customer Nos. field is properly set up
+                                                       // Initialize the series for "No." based on the "Customer Nos." field from SalesSetup
+             NoSeriesMgt.InitSeries(SalesSetup."Maintenance Nos.", xRec."No. Series", 0D, "IdMaintenance", "No. Series");
+         end;
+     end;*/
 
-    trigger OnInsert()
-    begin
-        // Custom logic when inserting a new maintenance request
-    end;
+
+
+
+
+
 
     trigger OnModify()
     begin

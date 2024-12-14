@@ -2,11 +2,11 @@ tableextension 65965 "BC ServiceContracts" extends "Service Contract Header"
 {
     fields
     {
-        field(65966; IdMaintenance; Code[20])
+        field(65966; IdMaintenance; Integer)
         {
             DataClassification = ToBeClassified;
             Caption = 'Maintenance Code';
-            TableRelation = "Maintenance Request".IdMaintenance; // Relation avec Maintenance Request
+            TableRelation = "MaintenanceRequest".IdMaintenance; // Relation avec Maintenance Request
         }
         field(65967; DescriptionMaintenance; Text[100])
         {

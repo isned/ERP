@@ -3,7 +3,7 @@ page 60004 "Maintenance Request Card"
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Documents;
-    SourceTable = "Maintenance Request";
+    SourceTable = "MaintenanceRequest";
     Caption = 'Maintenance Request Card';
 
     layout
@@ -18,6 +18,7 @@ page 60004 "Maintenance Request Card"
                 {
                     ApplicationArea = All;
                     Caption = 'Maintenance ID';
+                    Editable = false;
                 }
 
                 field(DateStart; Rec.DateStart)
@@ -96,25 +97,33 @@ page 60004 "Maintenance Request Card"
                 {
                     Caption = 'Details Technician';
 
+                    /* field(Id; Rec.TechnicianId)
+                     {
+                         ApplicationArea = all;
+
+                         trigger OnValidate()
+                         var
+                             Technicien: Record Technicien;
+                         begin
+                             // Vérification si le technicien existe dans la table
+                             if Technicien.Get(Rec.TechnicianId) then
+                                 // Remplir les informations sur le technicien
+                                 Rec.FirstName := Technicien.FirstName;
+                             Rec.LastName := Technicien.LastName;
+                             Rec.StatusTechnician := Technicien.Status;
+
+                         end;
+
+                     }*/
+
+
                     field(Id; Rec.TechnicianId)
                     {
                         ApplicationArea = All;
                         Caption = 'Technician ID';
 
-                        trigger OnLookup(var Text: Text): Boolean
-                        var
-                            Technicien: Record Technicien;
-                        begin
-                            Technicien.SetRange(Status, Technicien.Status::Available);
-
-                            if PAGE.RunModal(PAGE::"Technicien list", Technicien) = ACTION::LookupOK then begin
-                                Rec.TechnicianId := Technicien.Id;
-                                Rec.FirstName := Technicien.FirstName;
-                                Rec.LastName := Technicien.LastName;
-                                Rec.StatusTechnician := Technicien.Status;
-                            end;
-                            exit(true);
-                        end;
+                        // Définir la relation de la table pour filtrer par Technicien disponible
+                        TableRelation = Technicien WHERE(Status = CONST(Available));
 
                         trigger OnValidate()
                         var
@@ -135,20 +144,23 @@ page 60004 "Maintenance Request Card"
 
                     field(FirstName; Rec.FirstName)
                     {
-                        ApplicationArea = All;
-                        Editable = false;
+                        ApplicationArea = all;
+                        // Caption = 'First Name';
+                        // Editable = false; // Non éditable
                     }
 
                     field(LastName; Rec.LastName)
                     {
-                        ApplicationArea = All;
-                        Editable = false;
+                        ApplicationArea = all;
+                        // Caption = 'Last Name';
+                        // Editable = false; // Non éditable
                     }
 
                     field(Status; Rec.StatusTechnician)
                     {
-                        ApplicationArea = All;
-                        Editable = false;
+                        ApplicationArea = all;
+                        // Caption = 'Status';
+                        // Editable = false; // Non éditable
                     }
                 }
 
@@ -160,28 +172,7 @@ page 60004 "Maintenance Request Card"
                     {
                         ApplicationArea = All;
                         Caption = 'Customer ID';
-
-                        trigger OnLookup(var Text: Text): Boolean
-                        var
-                            CustomerRec: Record Customer;
-                        begin
-                            if PAGE.RunModal(PAGE::"Customer List", CustomerRec) = ACTION::LookupOK then begin
-                                Rec.CustomerId := CustomerRec."No.";
-                                Rec.CustomerName := CustomerRec.Name;
-                            end;
-                            exit(true);
-                        end;
-
-                        trigger OnValidate()
-                        var
-                            CustomerRec: Record Customer;
-                        begin
-                            if CustomerRec.Get(Rec.CustomerId) then begin
-                                Rec.CustomerName := CustomerRec.Name;
-                            end else begin
-                                ERROR('Customer with ID %1 does not exist.', Rec.CustomerId);
-                            end;
-                        end;
+                        TableRelation = Customer;  // Relation avec la table Customer
                     }
 
                     field(CustomerName; Rec.CustomerName)
@@ -200,31 +191,7 @@ page 60004 "Maintenance Request Card"
                     {
                         ApplicationArea = All;
                         Caption = 'Item ID';
-
-                        trigger OnLookup(var Text: Text): Boolean
-                        var
-                            ItemRec: Record Item;
-                        begin
-                            if PAGE.RunModal(PAGE::"Item List", ItemRec) = ACTION::LookupOK then begin
-                                Rec.ItemId := ItemRec."No.";
-                                Rec.ItemName := ItemRec.Description;
-                                Rec.UnitPrice := ItemRec."Unit Price";
-                                // Recalculer le TotalMaintenance quand le prix unitaire change
-                                Rec.TotalMaintenance := 60 * Rec.Duration + Rec.UnitPrice;
-                            end;
-                            exit(true);
-                        end;
-
-                        trigger OnValidate()
-                        var
-                            CustomerRec: Record Customer;
-                        begin
-                            if CustomerRec.Get(Rec.CustomerId) then begin
-                                Rec.CustomerName := CustomerRec.Name;
-                            end else begin
-                                ERROR('Customer with ID %1 does not exist.', Rec.CustomerId);
-                            end;
-                        end;
+                        TableRelation = Item;  // Relation avec la table Item
                     }
 
                     field(ItemName; Rec.ItemName)
@@ -233,6 +200,7 @@ page 60004 "Maintenance Request Card"
                         Caption = 'Item Name';
                         Editable = false; // Rendre le champ non modifiable
                     }
+
                     field(UnitPrice; Rec.UnitPrice)
                     {
                         ApplicationArea = All;

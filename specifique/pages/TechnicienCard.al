@@ -1,8 +1,8 @@
 page 60001 "Technicien Card"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Documents;
+    //ApplicationArea = All;
+    //UsageCategory = Documents;
     SourceTable = Technicien;
     Caption = 'Technicien Card';
 
@@ -14,7 +14,10 @@ page 60001 "Technicien Card"
             {
                 Caption = 'General';
                 field(Id; Rec.Id)
-                { ApplicationArea = all; }
+                {
+                    ApplicationArea = all;
+                    Editable = false;
+                }
                 field(FirstName; Rec.FirstName)
                 { ApplicationArea = all; }
                 field(LastName; Rec.LastName)

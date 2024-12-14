@@ -15,7 +15,10 @@ page 60005 "RoleCenter"
                 Caption = 'Card Cue';
             }
 
-
+            part(Technicienlist; 60000)
+            {
+                ApplicationArea = All;
+            }
         }
     }
 

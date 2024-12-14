@@ -21,7 +21,7 @@ report 60030 "Facture"
             }
 
             // Get Maintenance Requests for the Customer
-            dataitem(MaintenanceRequest; "Maintenance Request")
+            dataitem(MaintenanceRequest; "MaintenanceRequest")
             {
 
 

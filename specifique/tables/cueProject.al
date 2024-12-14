@@ -11,9 +11,23 @@ table 60001 cueProject
         }
         field(2; NumberTechnician; Integer)
         {
-            Caption = 'NumberTechnician';
+            Caption = 'Number Technician';
             FieldClass = FlowField;
             CalcFormula = Count(Technicien);
+
+        }
+        field(3; NumberTechnicianAvailable; Integer)
+        {
+            Caption = 'Number of Technicians Available';
+            FieldClass = FlowField;
+            CalcFormula = Count(Technicien where(Status = const(Available)));
+        }
+
+        field(4; NumberTechnicianBusy; Integer)
+        {
+            Caption = 'Number of Technicians Busy';
+            FieldClass = FlowField;
+            CalcFormula = Count(Technicien where(Status = const(Busy)));
         }
 
     }

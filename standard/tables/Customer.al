@@ -1,4 +1,5 @@
 tableextension 60018 "BC Customer" extends Customer
+
 {
     fields
     {

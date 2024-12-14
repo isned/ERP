@@ -9,7 +9,7 @@ pageextension 66050 "BC ServiceContractsCard" extends "Service Contract"
                 ApplicationArea = All;
                 trigger OnValidate()
                 var
-                    Maintenance: Record "Maintenance Request";
+                    Maintenance: Record "MaintenanceRequest";
                 begin
                     // Rechercher une maintenance associée au client
                     if Maintenance.GetMaintenanceByCustomer(Rec."Customer No.") then begin
@@ -31,7 +31,7 @@ pageextension 66050 "BC ServiceContractsCard" extends "Service Contract"
                 ApplicationArea = All;
                 trigger OnValidate()
                 var
-                    Maintenance: Record "Maintenance Request";
+                    Maintenance: Record "MaintenanceRequest";
                 begin
                     // Vérifier si l'ID de maintenance existe
                     if Maintenance.Get(Rec.IdMaintenance) then begin

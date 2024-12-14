@@ -1,9 +1,9 @@
-page 60003 "Maintenance Request List"
+page 60003 MaintenanceRequestList
 {
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "Maintenance Request";
+    SourceTable = "MaintenanceRequest";
     Caption = 'Maintenance Requests List';
     CardPageId = "Maintenance Request Card";
 
@@ -17,6 +17,8 @@ page 60003 "Maintenance Request List"
                 {
                     ApplicationArea = All;
                     Caption = 'Maintenance ID';
+                    Editable = false;
+
                 }
                 field(DateStart; Rec.DateStart)
                 {
